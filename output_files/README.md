@@ -1,1 +1,1 @@
-## Networks are automatically downloaded in txt format. Once you have downloaded them trnasform into html.
+## *Networks are automatically downloaded in txt format. Once you have downloaded them trasform into html.
