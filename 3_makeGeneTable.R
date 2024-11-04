@@ -15,7 +15,7 @@ data <- dplyr::filter(data, !grepl("UNVERIFIED", Sequence_Title))
 
 # Remove erroneous assignations
 nrow(data) - length(unique(data$Acc_Number)) #if this value >0 run the step. If =0, move to next step 
-n_occur <- data.frame(table(b$Acc_Number))
+n_occur <- data.frame(table(data$Acc_Number))
 n_occur<- n_occur[n_occur$Freq > 1, ]
 duplicated <- data[data$Acc_Number %in% n_occur$Var1, ]
 duplicated$check <- NA
